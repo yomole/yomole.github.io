@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Materials Calculator</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="../js/materials.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/materials.css">
+  </head>
+  <body>
+    <div id="background">
+    <div id="instructions">
+
+      <h1> 7 Days to Die Materials Calculator</h1>
+      <p>This tool will allow you to figure out how many materials are required to craft things in bulk. If you would like to see a list of every craftable item in the game, please click <a href="matall.html">here</a>.</p>
+      <p> First, please search for the item(s) you wish to craft using the menu below.</p>
+    </div>
+
+    <div id="matInputDiv">
+      <fieldset id="matInputForm">
+        <label id="legend">Materials Search</label><br />
+        <label class="description"> Please input the name of the item you wish to craft along with the amount you need.</label><br />
+        <label class="description">Item:
+        <input type="search" id="item">
+        <label class="description">Need:</label>
+        <input type="number" size="10" id="need">
+        <input type="submit" value="Search" onclick="inputItemSearch()" id="submit">
+      </fieldset>
+    </div>
+
+    <div id="matMenu">
+      <table id="outputTable">
+        <tr>
+          <th id="itemHead"> Item Name </th>
+          <th id="needHead"> Amount Needed </th>
+          <th id="nameHead"> Material Name </th>
+          <th id="amountHead"> Amount Needed </th>
+          <th id="availableHead"> Amount Available </th>
+        </tr>
+    </div>
+  </div>
+
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>7DTD Calc</title>
+    <script type="text/javascript" src="../js/time.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/time.css">
+  </head>
+
+  <body onload="optionsHidden()" class="siteBody">
+    <nav id='sitenav'>
+      <a href="../index.html">Home</a>
+      <a href="changelog.html">Changelog</a>
+    </nav>
+
+    <div id='sectionHeader'>
+      <h2> Time Calculator </h2>
+      <p id="sectionDescription">The pre-filled values given are the default ones for A18.4 </p>
+    </div>
+
+    <div id='results'>
+      <p id='resultsText'></p>
+    </div>
+
+    <fieldset class="form">
+      <label class="question"> What would you like to figure out? </label> <br />
+      <label class="question"> Real time until: <br />
+        <label><input type="radio" value="day" id="day" name="operation" onclick="optionsReveal('day')"></input>Day</label>
+        <label><input type="radio" value="night" id="night" name="operation" onclick="optionsReveal('night')"></input>Night</label>
+        <label><input type="radio" value="horde" id="horde" name="operation" onclick="optionsReveal('horde')"></input>Horde Night</label>
+    </fieldset>
+
+    <fieldset class="form" id="baseInput">
+      <label class="question">What is the current in-game time?</label> <br />
+        <label class="question" id="gameDayDescription">Day:<input type="number" size="4" min=0001 max=99999 id="gameDay"></label>
+
+        <input type="number" size="2" min="00" max="23" id="gameHour"></input> :
+        <input type="number" size="2" min="00" max="59" id="gameMinute"></input> <br />
+
+      <label class="question">What is the duration of a 24 hour cycle?</label> <br />
+        <select id="gameDuration">
+          <option value=10>10 Minutes</option>
+          <option value=20>20 Minutes</option>
+          <option value=30>30 Minutes</option>
+          <option value=40>40 Minutes</option>
+          <option value=50>50 Minutes</option>
+          <option value=60 selected>60 Minutes</option>
+          <option value=90>90 Minutes</option>
+          <option value=120>120 Minutes</option>
+        </select> <br/>
+      <label class="question">When does daytime start?</label> <br />
+        <select id="gameDaylight">
+          <option value =4 selected>4:00</option>
+          <option value =6>6:00</option>
+          <option value =8>8:00</option>
+          <option value =10>10:00</option>
+        </select> <br />
+      </fieldset>
+
+      <fieldset id="hordeInput" class="form">
+      <label class="question">What is the Horde Night frequency?</label> <br />
+        Every <input type="number" id="gameHorde" value="7" size="2" min="01"></input> Days <br />
+      <label class="question"> What is the Horde Night range?</label> <br />
+        ± <input type="number" id="gameRange" value="0" size="2" min="00"></input> Days <br />
+        </select>
+    </fieldset>
+
+  <div id="submit">
+    <button type="button" id='formSubmit' onclick="calculate()">Submit</button>
+  </div>
+
+  </body>
+</html>

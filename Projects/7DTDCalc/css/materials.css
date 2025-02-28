@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap');
+
+.amountCell{
+  border-right: 1px solid;
+}
+
+#amountHead{
+  width: 10%;
+}
+
+#availableHead{
+  width: 10%;
+}
+
+body{
+  background-image: url(https://7daystodie.com/wp-content/uploads/2020/08/7Days_a19_western_01a.jpg);
+}
+
+div#background{
+position: absolute;
+top: 0px;
+right: 0px;
+left: 0px;
+bottom: 0px;
+background-color: rgba(255, 255, 255, .2);
+}
+
+#instructions{
+  text-align: center;
+  font-family: 'Jura', sans-serif;
+}
+
+#itemHead{
+  width: 15%;
+}
+
+#outputTable{
+  margin-top: 1%;
+  border-style: solid;
+  border-width:thin;
+  width: 100%;
+  font-family: 'Jura', sans-serif;
+  background-color: white;
+}
+
+#matInputForm{
+  font-family: 'Jura', sans-serif;
+  width: 50%;
+  text-align: center;
+  margin:auto;
+  background-color: white;
+}
+
+#needHead{
+  width: 15%;
+  border-right: 1px solid;
+}

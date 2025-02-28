@@ -1,0 +1,17 @@
+.sitenav{
+  position: absolute;
+}
+
+#calculationConfig button{
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: .5%;
+  margin-left: .5%;
+}
+
+#calculationConfig{
+  border-style: none;
+  margin-bottom: -2%;
+  margin-top: -2%;
+  text-align: center;
+}

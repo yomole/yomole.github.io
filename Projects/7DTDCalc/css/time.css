@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap');
+
+.sitenav{
+  position: absolute;
+}
+
+.siteBody{
+  background-image: url('../images/repeated-square.png');
+}
+
+#sectionHeader{
+  text-align: center;
+  font-family: 'Jura', sans-serif;
+}
+
+#sectionDescription{
+  font-size: 13pt;
+  font-style: italic;
+}
+
+.form{
+  border-style: none;
+  text-align: center;
+  font-size: 15pt;
+  font-family: 'Jura', sans-serif;
+}
+
+#submit button{
+  margin: 10pt 0pt;
+  font-size: 15pt;
+}
+
+#submit{
+    text-align: center;
+}
+
+#hordeInput{
+  margin: 10pt 0pt;
+  font-size: 15pt;
+  border-style: none;
+  text-align: center;
+}
+
+#gameDay, #gameHour, #gameMinute, #gameHorde, #gameRange{
+  font-size: 14pt;
+  text-align: center;
+  font-weight: 300;
+}
+
+#gameDuration, #gameDaylight{
+  font-size: 13pt;
+}
+
+#results{
+text-align: center;
+font-size: 16pt;
+font-family: 'Jura', sans-serif;
+font-weight: 600;
+}
